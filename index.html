@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head style="scroll-behavior: smooth;">
+    <title>M & L</title>
+    <meta itemprop="image" content="frontend/undangan/preview/2.jpg">
+    <link href="frontend/undangan/mylove/css/themify-icons.css" rel="stylesheet">
+    <link href="frontend/undangan/mylove/css/font-awesome.min.css" rel="stylesheet">
+    <link href="frontend/undangan/mylove/css/flaticon.css" rel="stylesheet">
+    <link href="frontend/undangan/mylove/css/bootstrap.min.css" rel="stylesheet">
+    <link href="frontend/undangan/mylove/css/magnific-popup.css" rel="stylesheet">
+    <link href="frontend/undangan/mylove/css/animate.css" rel="stylesheet">
+    <link href="frontend/undangan/mylove/css/owl.carousel.css" rel="stylesheet">
+    <link href="frontend/undangan/mylove/css/owl.theme.css" rel="stylesheet">
+    <link href="frontend/undangan/mylove/css/slick.css" rel="stylesheet">
+    <link href="frontend/undangan/mylove/css/slick-theme.css" rel="stylesheet">
+    <link href="frontend/undangan/mylove/css/swiper.min.css" rel="stylesheet">
+    <link href="frontend/undangan/mylove/css/nice-select.css" rel="stylesheet">
+    <link href="frontend/undangan/mylove/css/owl.transitions.css" rel="stylesheet">
+    <link href="frontend/undangan/mylove/css/jquery.fancybox.css" rel="stylesheet">
+    <link href="frontend/undangan/mylove/css/odometer-theme-default.css" rel="stylesheet">
+    <link href="frontend/undangan/mylove/sass/style.css" rel="stylesheet">
+    <link href="frontend/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="frontend/undangan/mylove/css/template.css" rel="stylesheet">
+    <style>
+        .navigasi {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            /* box-sizing: border-box; */
+        }
+        /* Navigation container styling */
+        .navigasi {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        width: 100vw; /* Ensures the header stretches full width */
+        left: 100;
+        right: 100;
+        }
+
+        /* Logo styling */
+        .navigasi a {
+        font-size: 24px;
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+        }
+
+        /* Navigation menu styling */
+        .navigasi ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+        margin: 0;
+        padding: 0;
+        }
+
+        .navigasi li {
+        display: inline;
+        padding: 0 15px;
+        }
+
+        .navigasi a {
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        font-weight: 600;
+        }
+
+        /* Effect when hovering over menu items */
+        .navigasi a:hover {
+        background-color: #f0f0f0;
+        border-bottom: 2px solid #47443f; /* Add underline on hover */
+        }
+
+        /* Container Galeri */
+    .gallery-slider {
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        scroll-behavior: smooth;
+        gap: 10px;
+    }
+
+    /* Setiap Item Galeri */
+    .gallery-item {
+        min-width: 300px;
+        height: 300px;
+        border-radius: 15px;
+        overflow: hidden;
+        position: relative;
+        flex: none;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .gallery-item img:hover {
+        transform: scale(1.1);
+    }
+
+    /* Tombol Navigasi */
+    .gallery-slider::before,
+    .gallery-slider::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 60px;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.7), transparent);
+        z-index: 10;
+    }
+
+    .gallery-slider::after {
+        right: 0;
+        left: auto;
+        background: linear-gradient(to left, rgba(0, 0, 0, 0.7), transparent);
+    }
+        /* Active state for menu items (when clicking on a link) */
+        .wpo-video-section {
+            background: url("frontend/undangan/preview/7.jpg") no-repeat center center;
+            background-size: cover;
+            position: relative;
+        }
+        .wpo-event-section:before,
+        .wpo-event-section-s2:before {
+            background: url("") no-repeat center center;
+        }
+        .static-hero-s3, .static-hero-s4 {
+            background: url("") no-repeat center center;
+        }
+    </style>
+</head>
+
+<body class="color3">
+    <!-- start page-wrapper -->
+    <div class="page-wrapper">
+        <!-- start preloader -->
+        <div class="preloader">
+            <div class="vertical-centered-box">
+                <div class="content">
+                    <div class="loader-circle"></div>
+                    <div class="loader-line-mask">
+                        <div class="loader-line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end preloader -->
+        <!-- Start header -->
+        <header id="header">
+            <div class="wpo-site-header wpo-site-header-s1" style="z-index: 99">
+                <nav class="navigation navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <!-- Header -->
+                            <div class="navigasi">
+                                <!-- Logo -->
+                                <a style="font-size: 25px;">So Hyun <small style="font-size: 18px; color: #918879;">&</small> Ji Won</a>
+                                <!-- Navigation Menu (centered) -->
+                                <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#alamat">Event</a></li>
+                                <li><a href="#bride">Bride</a></li>
+                                <li><a href="#story">Love Story</a></li>
+                                <li><a href="#image">Gallery</a></li>
+                                <li><a href="#kehadiran">Presence</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- end of header -->
+        <!-- start of hero -->
+        <section style="
+            background-image: url('frontend/undangan/mylove/images/slider/bg.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh; /* Full height screen */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: black;
+        ">
+        <h2 style="
+            font-family: 'Times New Roman', Times, serif;
+            color: black;
+            margin: 0;
+            padding: 20px;
+        ">
+          <span style="display: block; font-size: 50px;">Kim Soo Hyun</span>
+          <span style="display: block; font-size: 25px; ">&</span>
+          <span style="display: block; font-size: 50px;">Kim Ji Won</span>
+          <p style="margin-top: 10px; font-size: 25px;">Monday, 3 March 2030</p>
+        </h2>
+        </section>
+        <!-- end of hero slider -->
+        <!-- start wpo-wedding-date -->
+        <div id="home" class="container" style="padding-top: 40px; padding-bottom: 60px; text-align: center;">
+            <p class="wow fadeInUp" data-wow-duration="1200ms" style="line-height: 30px; font-size: 20px;">Now a triple rope is woven, two people making a vow before God. They both now ask for His blessings 'To be faithful to each other. What God has united, let us not separate.</p>
+            <p class="wow fadeInUp" data-wow-duration="1200ms" style="line-height: 30px; font-size: 20px;">Ecclesiastes 4:12 "One who is alone may be defeated, but two together can make it through. But a threefold cord is not quickly broken."</p>
+            <section data-wow-duration="2.1s">
+                <!-- Countdown Section -->
+                <div class="timer" style="text-align: center; margin-top: 3rem; font-size: 1.6rem; color: #333; padding: 2.5rem 3rem; background-color: #fff;;">
+                    <p style="font-size: 1.6rem; font-weight: bold; color: #333; margin-bottom: 2rem; font-family: 'Georgia', serif;">Countdown to the Event:</p>
+                    <div id="countdown" style="font-size: 3rem; font-weight: bold; color: #333; font-family: 'Arial', sans-serif; padding: 1.5rem 2rem; border-radius: 10px; background-color: #f4f4f4; display: inline-block; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);"></div>
+                </div>
+            </section>        
+        </div>
+        <section id="alamat" style="padding: 2rem; background-color: #f9f9f9;">
+            <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                <!-- Khotbah Pernikahan -->
+                <div style="flex: 1; min-width: 300px; background-color: #ffffff; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); border-radius: 15px; padding: 2rem; text-align: center;">
+                    <h2 style="font-size: 24px; font-weight: bold; color: #333; margin-bottom: 1rem;">Wedding Sermon</h2>
+                    <ul style="list-style: none; padding: 0; color: #555; font-size: 16px; line-height: 1.8;">
+                        <li>Monday, 03 March 2030</li>
+                        <li style="font-weight: bold; color: #333;">Kingdom Hall</li>
+                        <li>Kingdom Hall of Jehovah's Witnesses Bow Fell RUGBY CV21 1JF UNITED KINGDOM</li>
+                        <li style="margin-top: 1rem;">
+                            <a href="https://www.google.com/maps/place/Kingdom+Hall+of+Jehovah's+Witnesses/@52.3907824,-1.2605881,15z/data=!3m1!4b1!4m6!3m5!1s0x487740e46a07388b:0x4a031ccab36d8ea2!8m2!3d52.3907707!4d-1.2421342!16s%2Fg%2F1pp2tx6dm?authuser=0&entry=ttu&g_ep=EgoyMDI1MDEyMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="text-decoration: none; background-color: #333; color: white; padding: 10px 20px; border-radius: 10px; display: inline-block; transition: background-color 0.3s ease;">Open Maps</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Makan Malam -->
+                <div style="flex: 1; min-width: 300px; background-color: #ffffff; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); border-radius: 15px; padding: 2rem; text-align: center;">
+                    <h2 style="font-size: 24px; font-weight: bold; color: #333; margin-bottom: 1rem;">Wedding Dinner</h2>
+                    <ul style="list-style: none; padding: 0; color: #555; font-size: 16px; line-height: 1.8;">
+                        <li>Friday, 07 Maret 2030</li>
+                        <li style="font-weight: bold; color: #333;">Tokyo Disneyland Resort</li>
+                        <li>1-1 Maihama, Urayasu, Chiba 279-0031, Jepang</li>
+                        <li style="margin-top: 1rem;">
+                            <a href="https://www.google.com/maps/place/Tokyo+Disney+Resort/@35.6317815,139.879057,17z/data=!4m10!1m2!2m1!1sdisneyland+japan!3m6!1s0x60187d19d0d3a2cd:0xda29db8ad489735f!8m2!3d35.6306579!4d139.8828695!15sChBkaXNuZXlsYW5kIGphcGFuWhIiEGRpc25leWxhbmQgamFwYW6SAQp0aGVtZV9wYXJr4AEA!16zL20vMDEwNDIz?authuser=0&entry=ttu&g_ep=EgoyMDI1MDEyMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="text-decoration: none; background-color: #333; color: white; padding: 10px 20px; border-radius: 10px; display: inline-block; transition: background-color 0.3s ease;">Open Maps</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>        
+        <!-- end wpo-wedding-date -->
+        <!-- start couple-section -->
+        <section id="bride" class="couple-section section-padding" style="padding-top: 0px;">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col col-lg-11">
+                        <div class="couple-area clearfix">
+                            <div class="couple-item bride wow fadeInLeft" data-wow-duration="2s">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-4">
+                                        <div style="border: 10px solid #EEE; margin-top: 90px;">
+                                            <img src="image/human (1).jpeg" alt="foto pengantin">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="couple-text" style="padding-left: 20px;">
+                                            <h3 style="line-height: 60px; font-family: 'Times New Roman', Times, serif;">Kim Soo Hyun</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="couple-item groom wow fadeInRight" data-wow-duration="2s">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-8 order-lg-1 order-2">
+                                        <div class="couple-text" style="padding-right: 20px;">
+                                            <h3 style="line-height: 60px; font-family: 'Times New Roman', Times, serif;">Kim Ji Woon</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 order-lg-2 order-1">
+                                        <div style="border: 10px solid #EEE;">
+                                            <img src="image/human (2).jpeg" alt="foto pengantin">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end container -->
+        </section>
+        <!-- end wpo-video-section-->
+        <!-- start story-section -->
+        <section id="story" style="padding: 2rem; background-color: #f9f9f9;">
+            <!-- Pertemuan Pertama -->
+            <div style="display: flex; align-items: center; gap: 2rem; margin-bottom: 3rem; flex-wrap: wrap;">
+                <!-- Gambar -->
+                <div style="flex: 1; min-width: 300px; position: relative;">
+                    <img src="image/love_story (2).jpeg" alt="Pertemuan Pertama" style="width: 100%; border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);">
+                </div>
+                <!-- Teks -->
+                <div style="flex: 1; min-width: 300px; background-color: rgba(255, 255, 255, 0.9); padding: 2rem; border-radius: 15px; position: relative; margin-left: -80px; z-index: 2; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);">
+                    <h3 style="font-size: 24px; font-weight: bold; color: #333; margin-bottom: 1rem;">The first meeting</h3>
+                    <span style="display: block; font-size: 16px; color: #888; margin-bottom: 1rem;">22 November 2022</span>
+                    <p style="font-size: 16px; color: #555; line-height: 1.8;">
+                        A wedding ceremony from a close relative that not only united two hearts, but also brought us together again after years of separation. We who have known each other since childhood, now meet again in this special moment. Although our faces are familiar, the atmosphere and feelings are very different. Now, we who have entered adolescence, meet with new, more mature, and meaningful views and feelings.
+                    </p>
+                </div>
+            </div>
+        
+            <!-- Jadian -->
+            <div style="display: flex; align-items: center; gap: 2rem; margin-bottom: 3rem; flex-wrap: wrap-reverse;">
+                <!-- Teks -->
+                <div style="flex: 1; min-width: 300px; background-color: rgba(255, 255, 255, 0.8); padding: 2rem; border-radius: 15px; position: relative; margin-right: -80px; z-index: 2; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); color: #888;">
+                    <h3 style="font-size: 24px; font-weight: bold; margin-bottom: 1rem;">In a Relationship</h3>
+                    <span style="display: block; font-size: 16px; margin-bottom: 1rem;">28 March 2025</span>
+                    <p style="font-size: 16px; line-height: 1.8;">
+                        Not long after that first meeting, our two close relatives brought us together again in an unexpected opportunity. At that time, we felt different feelings and views, as if everything had changed. Communication that had stopped for years, was re-established in a new way, full of meaning, and with feelings that were now much deeper than before.
+                    </p>
+                </div>
+                <!-- Gambar -->
+                <div style="flex: 1; min-width: 300px; position: relative;">
+                    <img src="image/love_story (1).jpeg" alt="Jadian" style="width: 100%; border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);">
+                </div>
+            </div>
+        
+            <!-- Lamaran -->
+            <div style="display: flex; align-items: center; gap: 2rem; margin-bottom: 3rem; flex-wrap: wrap;">
+                <!-- Gambar -->
+                <div style="flex: 1; min-width: 300px; position: relative;">
+                    <img src="image/love_story(3).jpeg" alt="Lamaran" style="width: 100%; border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);">
+                </div>
+                <!-- Teks -->
+                <div style="flex: 1; min-width: 300px; background-color: rgba(255, 255, 255, 0.9); padding: 2rem; border-radius: 15px; position: relative; margin-left: -80px; z-index: 2; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);">
+                    <h3 style="font-size: 24px; font-weight: bold; color: #333; margin-bottom: 1rem;">Engagement</h3>
+                    <span style="display: block; font-size: 16px; color: #888; margin-bottom: 1rem;">3 January 2030</span>
+                    <p style="font-size: 16px; color: #555; line-height: 1.8;">
+                        After five years of getting to know each other and getting close, we have finally decided to take a step further in this relationship. With the full support of our families who are always by our side, we feel ready to move on to the next stage. This is the moment we have been waiting for, where we both make a commitment to live the beautiful adventure that is to come, with full love, hope, and belief that the future together will be more beautiful than we ever imagined.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- end story-section -->
+
+        <!-- start wpo-portfolio-section -->
+        <!-- Section Galeri -->
+        <section id="image" style="padding: 60px; background-color: #000; color: #fff;" id="gallery">
+            <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
+                <!-- Judul Galeri -->
+                <h2 style="font-size: 36px; color: #fff; font-weight: bold; text-transform: uppercase; font-family: 'Georgia', serif; margin-bottom: 40px;">Love Gallery</h2>
+
+                <!-- Slider -->
+                <div class="gallery-slider">
+                    <!-- Setiap Item -->
+                    <div class="gallery-item">
+                        <a href="image/wedding (1).jpeg" data-fancybox="gallery">
+                            <img src="image/wedding (1).jpeg" alt="Wedding Image 1">
+                        </a>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="image/wedding (2).jpeg" data-fancybox="gallery">
+                            <img src="image/wedding (2).jpeg" alt="Wedding Image 2">
+                        </a>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="image/wedding (3).jpeg" data-fancybox="gallery">
+                            <img src="image/wedding (3).jpeg" alt="Wedding Image 3">
+                        </a>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="image/wedding (4).jpeg" data-fancybox="gallery">
+                            <img src="image/wedding (4).jpeg" alt="Wedding Image 4">
+                        </a>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="image/wedding (5).jpeg" data-fancybox="gallery">
+                            <img src="image/wedding (5).jpeg" alt="Wedding Image 4">
+                        </a>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="image/wedding (6).jpeg" data-fancybox="gallery">
+                            <img src="image/wedding (6).jpeg" alt="Wedding Image 4">
+                        </a>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="image/wedding (7).jpeg" data-fancybox="gallery">
+                            <img src="image/wedding (7).jpeg" alt="Wedding Image 4">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end wpo-portfolio-section -->
+
+        <!-- start of wpo-contact-section -->
+        <section id="kehadiran" style="padding: 60px; background-color: #ffffff; color: #ffff;">
+            <div style="max-width: 700px; margin: 0 auto; text-align: center; background: rgba(255, 255, 255, 0.1); border-radius: 15px; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5); padding: 40px; border: 1px solid rgba(255, 255, 255, 0.3);">
+                <h4 style="font-size: 20px; font-family: 'Georgia', serif; font-weight: bold; color: #000000; margin-bottom: 30px; text-transform: uppercase; letter-spacing: 2px;">Give Your Sayings and Presence</h4>
+                <form autocomplete="off" style="text-align: left;">
+                    <!-- Input Nama -->
+                    <div style="margin-bottom: 20px;">
+                        <input type="text" placeholder="Nama Anda" style="width: 100%; padding: 15px; font-size: 16px; font-family: 'Arial', sans-serif; border: 2px solid #888; border-radius: 10px; background: rgba(255, 255, 255, 0.1); color: #fff; box-sizing: border-box;">
+                    </div>
+                    <!-- Textarea Ucapan -->
+                    <div style="margin-bottom: 20px;">
+                        <textarea placeholder="Ketik Ucapan & Doa" style="width: 100%; padding: 15px; font-size: 16px; font-family: 'Arial', sans-serif; border: 2px solid #888; border-radius: 10px; height: 100px; resize: none; background: rgba(255, 255, 255, 0.1); color: #fff; box-sizing: border-box;" required></textarea>
+                    </div>
+                    <!-- Radio Buttons Kehadiran -->
+                    <div style="margin-bottom: 20px;">
+                        <p style="font-size: 18px; font-family: 'Georgia', serif; font-weight: bold; color: #000000; margin-bottom: 10px;">Your Presence:</p>
+                        <label style="display: block; margin-bottom: 10px; font-size: 16px; font-family: 'Arial', sans-serif; cursor: pointer; color: #000000;">
+                            <input type="radio" id="ya" name="kehadiran" checked style="margin-right: 10px; accent-color: rgb(0, 0, 0);">
+                            Yes, I will be there.
+                        </label>
+                        <label style="display: block; margin-bottom: 10px; font-size: 16px; font-family: 'Arial', sans-serif; cursor: pointer; color: #000000;">
+                            <input type="radio" id="tidak" name="kehadiran" style="margin-right: 10px; accent-color: rgb(0, 0, 0);">
+                            Sorry, I can't attend
+                        </label>
+                        <label style="display: block; margin-bottom: 10px; font-size: 16px; font-family: 'Arial', sans-serif; cursor: pointer; color: #000000;">
+                            <input type="radio" id="ragu" name="kehadiran" style="margin-right: 10px; accent-color: rgb(0, 0, 0);">
+                            I'm not sure whether I can attend or not
+                        </label>
+                    </div>
+                    <!-- Tombol Kirim dan Lihat Ucapan -->
+                    <div style="display: flex; justify-content: space-between; align-items: center; gap: 15px; margin-top: 20px;">
+                        <button type="submit" style="flex: 1; background: #000000; color: #ffffff; border: none; padding: 15px; font-size: 16px; font-family: 'Arial', sans-serif; font-weight: bold; border-radius: 10px; cursor: pointer; transition: 0.3s; text-transform: uppercase; letter-spacing: 1px;">
+                            Send
+                        </button>
+                        <button type="button" style="flex: 1; background: transparent; color: #000000; border: 2px solid #888; padding: 15px; font-size: 16px; font-family: 'Arial', sans-serif; font-weight: bold; border-radius: 10px; cursor: pointer; transition: 0.3s; text-transform: uppercase; letter-spacing: 1px;" data-bs-toggle="modal" data-bs-target="#ucapanModal">
+                            See All Sayings
+                        </button>
+                    </div>
+                </form>
+                <!-- Border Style -->
+                <div style="margin-top: 30px; height: 1px; background: rgba(255, 255, 255, 0.3);"></div>
+            </div>
+        </section>
+                <!-- end of wpo-contact-section -->
+
+        <!-- start of wpo-site-footer-section -->
+        <footer class="wpo-site-footer" style="text-align: center; padding: 20px 0; background-color: #fff;">
+            <div>
+                <p class="copyright" style="font-family: 'Georgia', serif; font-size: 16px; color: #000; margin: 0;">
+                    <a href="/" style="text-decoration: none; color: #000; font-weight: bold;">Lintang Langit Biru</a>
+                </p>
+            </div>
+        </footer>
+        <!-- end of wpo-site-footer-section -->
+    </div>
+    <!-- end of page-wrapper -->
+
+    <!-- Modal -->
+    <div class="modal fade show" id="fullwedding" style="display: block">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-body" style="padding: 0px;">
+                    <!-- start of hero -->
+                    <section style="height: 100vh; display: flex; justify-content: center; align-items: center; background-color: #fff;">
+                        <div style="text-align: center; font-family: 'Times New Roman', Times, serif; color: #000;">
+                            <h2 style="font-size: 48px; color: #000; font-weight: bold;">Kim Soo Hyun</h2>
+                            <span style="font-size: 40px; color: #000;">&</span>
+                            <h2 style="font-size: 48px; color: #000; font-weight: bold;">Kim Ji Won</h2>
+                            <p style="color: #000; font-size: 18px; margin-bottom: 0px; line-height: 24px;">Dear :</p>
+                            <p style="color: #000; font-size: 25px; font-weight: bold; margin: 10px 0px; line-height: 28px;">Lintang Langit Biru</p>
+                            <button class="btn" id="bukaUndangan" style="background-color: #000; color: #fff; border: none; padding: 15px 30px; font-size: 18px; font-weight: bold; border-radius: 5px; cursor: pointer;">Open</button>
+                        </div>
+                    </section>
+                    <!-- end of hero slider -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="ucapanModal" tabindex="-1" aria-labelledby="ucapanModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="ucapanModalLabel">Greetings from invited guests</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped" width="100%" id="table_ucapan">
+                            <thead>
+                                <tr>
+                                    <th style="text-align: center">Guest Name</th>
+                                    <th style="text-align: center; width: 400px;">Guest Greetings</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="text-align: center">Song Hye Kyo</td>
+                                    <td>Congratulations on your new life with your sweetheart. May your love grow every day.</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center">Taylor Swift</td>
+                                    <td>Congratulations on your marriage, may it be a happier point in your life journey together.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="musik" src="song/backsound.mp3" autoplay loop></audio>
+    <!-- All JavaScript files
+    ================================================== -->
+    <script src="frontend/undangan/mylove/js/jquery.min.js"></script>
+    <script src="frontend/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="frontend/undangan/mylove/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugins for this template -->
+    <script src="frontend/undangan/mylove/js/modernizr.custom.js"></script>
+    <script src="frontend/undangan/mylove/js/jquery.dlmenu.js"></script>
+    <script src="frontend/undangan/mylove/js/jquery-plugin-collection.js"></script>
+    <!-- Custom script for this template -->
+    <script src="frontend/libs/js/sweetalert2.all.min.js"></script>
+    <script src="frontend/undangan/mylove/js/script.js"></script>
+    <script>
+        // Otomatis scroll slider
+        const slider = document.querySelector('.gallery-slider');
+        let scrollAmount = 0;
+    
+        setInterval(() => {
+            if (scrollAmount >= slider.scrollWidth - slider.offsetWidth) {
+                scrollAmount = 0;
+            } else {
+                scrollAmount += 300; // Scroll jarak 300px setiap interval
+            }
+            slider.scrollTo({
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
+        }, 3000); // Interval waktu 3 detik
+    </script>
+    
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("March 3, 2030 15:00:00").getTime();
+      
+        // Update the countdown every 1 second
+        var x = setInterval(function() {
+      
+          // Get the current date and time
+          var now = new Date().getTime();
+      
+          // Find the distance between now and the countdown date
+          var distance = countDownDate - now;
+      
+          // Time calculations for days, hours, minutes, and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+          // Display the result in the "countdown" element
+          document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+      
+          // If the countdown is finished, display a message
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("countdown").innerHTML = "Acara Dimulai!";
+          }
+        }, 1000);
+      </script>
+    <script type="text/javascript">
+        $("#bukaUndangan").click(function () {
+            $("#fullwedding").fadeToggle("slow");
+            $("#musik")[0].play();
+            $("#musik").on("ended", function() {
+                this.currentTime = 0;
+                this.play();
+            });
+            $(".button-musik").click(function() {
+                if ($(this).find("i").hasClass("fa-play")) {
+                    $("#musik")[0].play();
+                    $(this).html('<i class="fa fa-pause"></i>');
+                } else {
+                    $("#musik")[0].pause();
+                    $(this).html('<i class="fa fa-play"></i>');
+                }
+            });
+        });
+        
+    </script>
+    <!-- =======================================================
+    * Template Mylove: https://themeforest.net/item/mylove-wedding-html5-template/38484030
+    * Image by: https://www.freepik.com/
+    ======================================================== -->
+</body>
+
+</html>
